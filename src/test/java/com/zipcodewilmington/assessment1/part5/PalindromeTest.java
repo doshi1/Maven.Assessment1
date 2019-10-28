@@ -8,7 +8,7 @@ public class PalindromeTest {
     @Test
     public void solution0(){
         Palindrome palindrome = new Palindrome();
-        Integer expected = palindrome.countPalindromes("aaa");
+        boolean expected = palindrome.countPalindromes("aaa");
         Integer actual = 6;
         Assert.assertEquals(expected, actual);
 
@@ -18,7 +18,7 @@ public class PalindromeTest {
     public void solution1(){
         // Should assert to true
         Palindrome palindrome = new Palindrome();
-        Integer expected = palindrome.countPalindromes("abccba");
+        boolean expected = palindrome.countPalindromes("abccba");
         Integer actual = 9;
         Assert.assertEquals(expected, actual);
 
@@ -28,7 +28,7 @@ public class PalindromeTest {
     public void solution2(){
         // Should assert to true
         Palindrome palindrome = new Palindrome();
-        Integer expected = palindrome.countPalindromes("daata");
+        boolean expected = palindrome.countPalindromes("daata");
         Integer actual = 7;
         Assert.assertEquals(expected, actual);
 
@@ -38,7 +38,7 @@ public class PalindromeTest {
     public void solution3(){
         // Should assert to true
         Palindrome palindrome = new Palindrome();
-        Integer expected = palindrome.countPalindromes("lrfkqyuqfj");
+        boolean expected = palindrome.countPalindromes("lrfkqyuqfj");
         Integer actual = 10;
         Assert.assertEquals(expected, actual);
 
@@ -48,7 +48,7 @@ public class PalindromeTest {
     public void solution4(){
         // Should assert to true
         Palindrome palindrome = new Palindrome();
-        Integer expected = palindrome.countPalindromes("kxyqvnrtys");
+        boolean expected = palindrome.countPalindromes("kxyqvnrtys");
         Integer actual = 10;
         Assert.assertEquals(expected, actual);
 
@@ -58,7 +58,7 @@ public class PalindromeTest {
     public void solution5(){
         // Should assert to true
         Palindrome palindrome = new Palindrome();
-        Integer expected = palindrome.countPalindromes("ltvzkqtpvolphckcyufdqmlglimklfzktgygdttnhcvpfdfbrpzlkvshwywshtdgmbqbkkxcvgumonmwvytbytnuqhmfjaqtgngcwkuzyamnerphfmwevhwlezohyeehbrcewjxvceziftiqtntfsrptugtiznorvonzjfeacgamayapwlmbzitzszhzkosvnknberbltlkggdgpljfisyltmmfvhybljvkypcflsaqevcijcyrgmqirzniaxakholawoydvchveigttxwpukzjfhxbrtspfttotafsngqvoijxuvqbztvaalsehzxbshnrvbykjqlrzzfmlvyoshiktodnsjjpqplciklzqrxloqxrudygjtyzleizmeainxslwhhjwslqendjvxjyghrveuvphknqtsdtwxcktmwwwsdthzmlmbhjkmouhpbqurqfxgqlojmwsomowsjvpvhznbsilhhdkbdxqgrgedpzchrgefeukmcowoeznwhpiiduxdnnlbnmyjyssbsococdzcuunkrfduvouaghhcyvmlkzaajpfpyljtyjjpyntsefxiswjutenuycpbcnmhfuqmmidmvknyxmywegmtunodvuzygvguxtrdsdfzfssmeluodjgdgzfmrazvndtaurdkugsbdpawxitivdubbqeonycaegxfjkklrfkraoheucsvpiteqrswgkaaaohxxzhqjtkqaqhkwberbpmglbjipnujywogwczlkyrdejaqufowbigrsnjniegvdvotugocedktcbbufnxorixibbdfrzuqsyrfqghoyqevcuanuujszitaoaowsxyglafbwzddoznrvjqeyqignpitruijvyllsibobjltusrypanvybsfrxtlfmpdidtyozoolzslgdgowijatklvjzscizrkupmsoxftumyxifyunxucubvkfctkqlroqgzjvjwzizppvsomflvioemycnp");
+        boolean expected = palindrome.countPalindromes("ltvzkqtpvolphckcyufdqmlglimklfzktgygdttnhcvpfdfbrpzlkvshwywshtdgmbqbkkxcvgumonmwvytbytnuqhmfjaqtgngcwkuzyamnerphfmwevhwlezohyeehbrcewjxvceziftiqtntfsrptugtiznorvonzjfeacgamayapwlmbzitzszhzkosvnknberbltlkggdgpljfisyltmmfvhybljvkypcflsaqevcijcyrgmqirzniaxakholawoydvchveigttxwpukzjfhxbrtspfttotafsngqvoijxuvqbztvaalsehzxbshnrvbykjqlrzzfmlvyoshiktodnsjjpqplciklzqrxloqxrudygjtyzleizmeainxslwhhjwslqendjvxjyghrveuvphknqtsdtwxcktmwwwsdthzmlmbhjkmouhpbqurqfxgqlojmwsomowsjvpvhznbsilhhdkbdxqgrgedpzchrgefeukmcowoeznwhpiiduxdnnlbnmyjyssbsococdzcuunkrfduvouaghhcyvmlkzaajpfpyljtyjjpyntsefxiswjutenuycpbcnmhfuqmmidmvknyxmywegmtunodvuzygvguxtrdsdfzfssmeluodjgdgzfmrazvndtaurdkugsbdpawxitivdubbqeonycaegxfjkklrfkraoheucsvpiteqrswgkaaaohxxzhqjtkqaqhkwberbpmglbjipnujywogwczlkyrdejaqufowbigrsnjniegvdvotugocedktcbbufnxorixibbdfrzuqsyrfqghoyqevcuanuujszitaoaowsxyglafbwzddoznrvjqeyqignpitruijvyllsibobjltusrypanvybsfrxtlfmpdidtyozoolzslgdgowijatklvjzscizrkupmsoxftumyxifyunxucubvkfctkqlroqgzjvjwzizppvsomflvioemycnp");
         Integer actual = 1084;
         Assert.assertEquals(expected, actual);
 
