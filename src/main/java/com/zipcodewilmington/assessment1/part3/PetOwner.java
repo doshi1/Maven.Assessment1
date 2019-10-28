@@ -13,7 +13,15 @@ public class PetOwner {
      * @param pets array of Pet object
      */
     public PetOwner(String name, Pet... pets) {
+        this.pets = new ArrayList<Pet>();
+        if(pets!= null) {
 
+            for (Pet pet : pets) {
+                pet.setOwner(this);
+                this.pets.add(pet);
+            }
+        }
+        this.name = name;
     }
 
 
@@ -30,6 +38,7 @@ public class PetOwner {
      * @param pet pet to be removed from the composite collection Pets
      */
     public void removePet(Pet pet) {
+        pets.remove(pet);
 
     }
 
@@ -38,7 +47,9 @@ public class PetOwner {
      * @return true if I own this pet
      */
     public Boolean isOwnerOf(Pet pet) {
-        return null;
+
+        return pets.contains(pet);
+
     }
 
     /**
@@ -70,7 +81,7 @@ public class PetOwner {
      * @return the number of Pet objects stored in this class
      */
     public Integer getNumberOfPets() {
-        return null;
+        return pets.size();
     }
 
     /**
@@ -85,6 +96,7 @@ public class PetOwner {
      * @return array representation of animals owned by this PetOwner
      */
     public Pet[] getPets() {
+        //return pets.size();
         return null;
     }
 }
