@@ -1,20 +1,29 @@
 package com.zipcodewilmington.assessment1.part3;
 
+import java.util.ArrayList;
+
 /**
  * Created by leon on 2/16/18.
  */
 public class PetOwner {
+    private String name;
+    private ArrayList<Pet> pets;
     /**
      * @param name name of the owner of the Pet
      * @param pets array of Pet object
      */
     public PetOwner(String name, Pet... pets) {
+
     }
+
 
     /**
      * @param pet pet to be added to the composite collection of Pets
      */
     public void addPet(Pet pet) {
+
+        if(pet != null)
+            pets.add(pet);
     }
 
     /**
@@ -68,7 +77,8 @@ public class PetOwner {
      * @return the name property of the Pet
      */
     public String getName() {
-        return null;
+
+        return name;
     }
 
     /**

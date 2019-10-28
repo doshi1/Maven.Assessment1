@@ -4,14 +4,16 @@ public class Palindrome {
 
     public boolean countPalindromes(String input){
 
-        String reverse = "";
+       /* String reverse = "";
         int length = input.length();
 
         for(int i = length - 1; i >= 0; --i) {
             reverse = reverse + input.charAt(i);
         }
 
-        if (reverse.equals(input));
+        if (input.equals(reverse)); */
+
+
         return true;
     }
 

@@ -43,7 +43,16 @@ public class ArrayUtils {
      * given an array of objects, named `objectArray` return the most frequently occuring object in the array
      */
     public static Object getMostCommon(Object[] objectArray) {
-        return null;
+        Object result = null;
+        int occurence = 0;
+        for (Object object: objectArray) {
+            int numberOfOccurences = getNumberOfOccurrences(objectArray, object);
+            if( numberOfOccurences > occurence){
+                occurence = numberOfOccurences;
+                result = object;
+            }
+        }
+        return result;
     }
 
 
@@ -53,7 +62,16 @@ public class ArrayUtils {
      * given an array of objects, named `objectArray` return the least frequently occuring object in the array
      */
     public static Object getLeastCommon(Object[] objectArray) {
-        return null;
+        Object result = null;
+        int occurence = Integer.MAX_VALUE;
+        for (Object object: objectArray) {
+            int numberOfOccurences = getNumberOfOccurrences(objectArray, object);
+            if( numberOfOccurences < occurence){
+                occurence = numberOfOccurences;
+                result = object;
+            }
+        }
+        return result;
     }
 
     /**
@@ -63,6 +81,7 @@ public class ArrayUtils {
      * given two arrays `objectArray` and `objectArrayToAdd`, return an array containing all elements in `objectArray` and `objectArrayToAdd`
      */
     public static Object[] mergeArrays(Object[] objectArray, Object[] objectArrayToAdd) {
-        return null;
+
+       return null;
     }
 }
